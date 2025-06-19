@@ -1,4 +1,14 @@
 [[pages]]
-path = "src/ui/pages/index_page.py"
-name = ""
+path = "src/ui/pages/about.py"
+name = "О проекте"
+icon = "📊"
 
+[[pages]]
+path = "src/ui/pages/api_docs.py"
+name = "Документация"
+icon = "📄"
+
+[[pages]]
+path = "src/ui/pages/example.py"
+name = "Пример"
+icon = "📘"

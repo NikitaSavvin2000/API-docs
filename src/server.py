@@ -2,7 +2,9 @@ import subprocess
 import os
 
 
-to_run_path = os.path.abspath("src/ui/pages/main_page.py")
+# to_run_path = os.path.abspath("src/ui/pages/main_page.py")
+
+to_run_path = os.path.abspath("src/ui/pages/streamlit_app.py")
 
 
 def streamlit_run():
