@@ -7,12 +7,12 @@ cwd = os.getcwd()
 
 path_to_example = os.path.join(cwd, "src", "examples", "example_1.csv")
 
-st.title("🛠 Документация API: horizon_api/forecast")
+st.title("🛠 Документация Horizon API")
 
 st.markdown("""
 ### Описание
 
-# 📈 POST /forecast
+### 📈 POST https://nikitasavvin2000-horizon-api-921e.twc1.net/horizon_api
 
 Генерация прогноза временного ряда на основе исторических данных.
 
@@ -120,8 +120,6 @@ response = func_generate_forecast(
     forecast_horizon_time="2022-09-10 05:00:00"
 )
 ```
-
----
 
 ## 🧩 Дополнительно
 

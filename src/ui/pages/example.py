@@ -1,5 +1,16 @@
 import streamlit as st
 
+st.set_page_config(page_title="📈 Пример использования API для прогноза", layout="wide")
+
+st.title("📈 Пример функции для генерации прогноза")
+st.markdown("""
+Это пример Python-функции, которая отправляет DataFrame с временным рядом на backend API  
+и получает прогноз на указанный горизонт времени.
+
+""")
+st.markdown("### 🔗 [Полный рабочий пример в Google Colab](https://colab.research.google.com/drive/1jdo3EBuHgpBtvp0xsFXIGFDQOidWlCRa?usp=sharing)")
+
+
 code = '''import pandas as pd
 import requests
 
@@ -27,6 +38,5 @@ def func_generate_forecast(df: pd.DataFrame, time_column: str, col_target: str, 
         print(f"Request exception occurred: {e}")
         return None
 '''
-
 
 st.code(code, language="python")
